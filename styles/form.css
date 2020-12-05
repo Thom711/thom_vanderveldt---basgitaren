@@ -1,0 +1,43 @@
+.form-item {
+    display: flex; 
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px 50px 75px 50px;
+}
+
+.label {
+    float: left;
+    display: flex;
+    align-self: center;
+    width: 150px;
+    margin: 20px 100px 20px 0px;
+}
+
+.input {
+    border: solid black 1px;
+    font-size: 1.5em;
+}
+
+.input[type="radio"] {
+    display: inline;
+    margin-bottom: 10px;
+}
+
+.textarea {
+    width: 75%;
+    height: 150px;
+    margin-left: 10px;
+}
+
+.buttons {
+    margin-left: 190px;
+}
+
+.button {
+    font-size: 1.25em;
+    padding: 10px;
+}
+
+.button:last-child {
+    margin-left: 50px;
+}

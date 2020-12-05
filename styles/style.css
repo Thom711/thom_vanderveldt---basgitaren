@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* LAYOUT */
+.container {
+    height: 100%;
+    display: grid;
+    margin: 0 auto;
+    text-size-adjust: none;
+    background-color: lightgrey;
+}
+
+.grid {
+    grid-template-columns: repeat(1fr, 12);
+    grid-template-rows: 1fr auto 70px;
+    grid-template-areas:
+        "h h h h h h h h h h h h"
+        "m m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+}
+
+/* SECTIONS */
+
+    /* HEADER */
+    .page-header {
+        grid-area: h;
+        background-color: lightgrey;
+        align-items: center;
+        border-bottom: solid lightslategray 1px;
+    }
+
+    .logo {
+        font-family: 'Russo One', sans-serif;
+        font-size: 3em;
+        border: black solid 2px;
+        border-radius: 8px;
+        padding: 2px 20px 2px 20px;
+        background-color: rgb(144, 185, 247);
+        width: 45%;
+        margin: 5px 5px 20px 5px;
+    }
+
+        /* NAV BAR */
+        .navbar {
+            border: 1px;
+            border-radius: 8px;
+            display: flex;
+            overflow: hidden;
+            max-width: 100%;
+            height: 150%;
+        }
+        
+        .navbar-item {
+            font-family: 'Russo One', sans-serif;
+            display: block;
+            text-align: center;
+            padding: 5px 16px;
+            text-decoration: none;
+            font-size: 2em;
+            color: black;
+            width: 22%;
+            border-right: solid lightslategray 1px;
+            transition: width 2s, background-color 2s;
+        }
+        
+        .navbar-item:hover {
+            width: 40%;
+            background-color: rgb(144, 185, 247);
+        }
+        
+        .navbar-item:last-child {
+            border-right: unset;
+        }
+        
+        .nav-link {
+            margin: 0;
+        }
+
+    /* MAIN */
+    main {
+        background-color: white;
+        grid-area: m;
+        padding: 50px 20px 30px 20px;
+    }
+
+    figure {
+        justify-content: center;
+        margin: 0;
+    }
+
+    h2 {
+        margin: 0;
+        margin-bottom: 5px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .width-66 {
+        align-self: center;
+        width: 66%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+    }
+
+    .width-full {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+    }
+
+        /* ARTICLES */
+        article {
+            padding: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        
+        aside {
+            width: 33%;
+            background-color: lightgrey;
+            border: solid 1px black;
+            border-radius: 8px;
+            padding: 10px;
+            margin-left: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5em;
+        }
+        
+        .article-header {
+            justify-content: center;
+        }
+
+        .image {
+            border-radius: 8px;
+            align-self: center;
+            height: auto;
+        }
+
+    /* FOOTER */
+    footer {
+        grid-area: f;
+        background-color: lightgrey;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5em;
+        padding-left: 100px;
+        padding-right: 100px;
+        border-top: solid lightslategray 1px;
+    }
+
+    .about {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+    }
+
+/* HELPERS */
+.flex {
+    display: flex;
+}
+
+.mt {
+    margin-top: 10px;
+}
+
+.mt2 {
+    margin-top: 20px;
+}
+
+.mr {
+    margin-right: 20px;
+}
+
+.mr2 {
+    margin-right: 40px;
+}
+
+.mb {
+    margin-bottom: 10px;
+}
+
+.mb2 {
+    margin-bottom: 20px;
+}
+
+.inline-link {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* * Copyright (c) 2018 Andrej Sharapov
+* Licensed under MIT (https://github.com/madeas/box-shadows.css/blob/master/LICENSE) */
+.bShadow-33, .bShadow-33h:hover {
+    box-shadow: rgba(0, 0, 0, 0.2) 15px 15px 5px -5px; }
+

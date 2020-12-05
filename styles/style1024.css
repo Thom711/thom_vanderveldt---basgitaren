@@ -1,0 +1,53 @@
+@media(min-width: 1024px) {
+    /* LAYOUT */
+    .container {
+        margin: unset;
+        text-size-adjust: unset;
+    }
+
+    /* HEADER */
+    .page-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px 0px 0px 10px;
+    }
+
+    .logo {
+        font-size: 1.5em;
+        border-radius: 6px;
+        padding: 2px 8px 2px 8px;
+        width: 25%;
+    }  
+
+        /* NAV BAR */
+        .navbar-item {
+            font-size: 1.25em;
+        }
+
+    /* MAIN */
+    main {
+        padding-left: 12.5%;
+        padding-right: 12.5%;
+	    margin: unset;
+    }
+
+    .width-66 {
+        font-size: 1em;
+    }
+
+    .width-full {
+        font-size: 1em;
+    }
+
+        /* ARTICLES */
+        aside {
+
+            font-size: 1em;
+        }
+
+    /* FOOTER */
+    footer {
+        font-size: 1em;
+    }
+}

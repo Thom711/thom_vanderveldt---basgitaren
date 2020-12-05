@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Vragenlijst</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style1024.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style1260.css">
+    <link rel="stylesheet" type="text/css" href="./styles/form.css">
+    <link rel="stylesheet" type="text/css" href="./styles/form1024.css">
+</head>
+
+<body class="container grid">
+    <header class="page-header">
+        <figure class="flex logo bShadow-33">
+            Basgitaren
+        </figure>
+        <nav class="navbar bShadow-33">
+            <a href="index.html" class="navbar-item">
+                <p class="nav-link">Home </p>
+            </a>
+            <a href="favoriet.html" class="navbar-item">
+                <p class="nav-link">Favoriet</p>
+            </a>
+            <a href="merken.html" class="navbar-item">
+                <p class="nav-link">Merken</p>
+            </a>
+            <a href="vragenlijst.html" class="navbar-item">
+                <p class="nav-link">Vragenlijst</p>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <header class="article-header mt2">
+            <h2>Vragenlijst</h2>
+        </header>
+
+        <p class="width-full">
+            Ik verzamel graag gegevens over basgitaristen, zou je wat achter willen laten?
+        </p>
+
+        <div class="flex width-full">
+            <form name="vragenlijst" method="POST" data-netlify="true">
+                <div class="form-item">
+                    <label for="naam" class="label">Naam: </label>
+                    <input type="text" name="naam" class="input">
+                </div>
+
+                <div class="form-item">
+                    <label for="email" class="label">Email: </label>
+                    <input type="email" name="email" class="input">
+                </div>
+
+                <div class="form-item">
+                    <label for="leeftijd" class="label">Leeftijd: </label>
+                    <input type="number" name="leeftijd" class="input">
+                </div>
+
+                <div class="form-item">
+                    <label for="merk" class="label">Favoriete Merk: </label>
+
+                    <div>
+                        <input type="radio" name="merk" class="input" value="rickenbacker" id="rickenbacker">
+                        <label for="rickenbacker">Rickenbacker</label> <br>
+
+                        <input type="radio" name="merk" class="input" value="yamaha" id="yamaha">
+                        <label for="yamaha">Yamaha</label> <br>
+
+                        <input type="radio" name="merk" class="input" value="fender" id="fender">
+                        <label for="fender">Fender</label> <br>
+
+                        <input type="radio" name="merk" class="input" value="ibanez" id="ibanez">
+                        <label for="ibanez">Ibanez</label> <br>
+                    </div>
+                </div>
+
+                <div class="form-item">
+                    <label for="eigenaar" class="label">Heb je een bas?</label>
+
+                    <div>
+                        <input type="radio" name="eigenaar" class="input" value="ja" id="ja">
+                        <label for="ja">Ja</label> <br>
+
+                        <input type="radio" name="eigenaar" class="input" value="nee" id="nee">
+                        <label for="nee">Nee</label> <br>
+                    </div>
+
+                </div>
+
+                <div class="form-item">
+                    <label for="eigenmerk" class="label">Zo ja, welke? </label>
+                    <input type="text" name="eigenmerk" class="input">
+                </div>
+
+                <div class="form-item">
+                    <label for="kleur" class="label">In welke kleur?</label>
+                    <input type="color" name="kleur" class="input">
+                </div>
+
+                <div class="form-item">
+                    <label for="tekst" class="label">Wil je er nog wat over kwijt? </label>
+                    <textarea name="tekst" class="input textarea"></textarea>
+                </div>
+
+                <div class="form-item">
+                    <div class="buttons">
+                        <input type="submit" value="Verzenden" class="button">
+                    </div>
+                    <div>
+                        <input type="reset" value="Reset" class="button">
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <figure class="flex mt mb2">
+            <img src="./images/main_bass.jpg" alt="Main" class="image bShadow-33">
+        </figure>
+    </main>
+
+    <footer>
+        <div>
+            Copyright 2020, Thom van der Veldt
+        </div>
+
+        <nav>
+            <a href="over.html" class="about">Over & Contact</a>
+        </nav>
+    </footer>
+</body>
+
+</html>

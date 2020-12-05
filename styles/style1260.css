@@ -1,0 +1,52 @@
+@media(min-width: 1260px) {
+    /* LAYOUT */
+    .grid {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 1fr 4fr 70px;
+        grid-template-areas:
+            "h m"
+            "h m"
+            ". f";
+    }
+
+    /* HEADER */
+    .page-header {
+        display: unset;
+        border-right: solid lightslategray 1px;
+        border-bottom: unset;
+    }
+
+    .logo {
+        border-radius: 8px;
+        padding: 5px 14px 5px 14px;
+        width: unset;
+    }  
+
+        /* NAV-BAR */
+        .navbar {
+            height: unset;
+            display: block;
+            max-width: 90%;
+        }
+
+        .navbar-item {
+            width: unset;
+            padding-top: 20px;
+            border-right: unset;
+            transition: background-color 2s;
+        }
+
+        .navbar-item:hover {
+            width: unset;
+            background-color: rgb(144, 185, 247);
+        }
+
+        .navbar-item:last-child {
+            padding-bottom: 20px;
+        }
+
+    /* MAIN */
+    main {
+        max-width: 75%;
+    }
+}

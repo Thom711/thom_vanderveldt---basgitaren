@@ -1,0 +1,22 @@
+@media(min-width: 1024px) {
+    .form-item {
+        margin: 20px 20px 20px 20px;
+    }
+
+    .label {
+        margin: 20px 50px 20px 0px;
+    }
+
+    .textarea {
+        margin-left: 30px;
+    }
+
+    .buttons {
+        margin-left: 150px;
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 3px;
+    }
+}

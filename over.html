@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Over Mij & Contact</title>
+
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style1024.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style1260.css">
+    <link rel="stylesheet" type="text/css" href="./styles/form.css">
+    <link rel="stylesheet" type="text/css" href="./styles/form1024.css">
+</head>
+
+<body class="container grid">
+    <header class="page-header">
+        <figure class="flex logo bShadow-33">
+            Basgitaren
+        </figure>
+
+        <nav class="navbar bShadow-33">
+            <a href="index.html" class="navbar-item">
+                <p class="nav-link">Home </p>
+            </a>
+            <a href="favoriet.html" class="navbar-item">
+                <p class="nav-link">Favoriet</p>
+            </a>
+            <a href="merken.html" class="navbar-item">
+                <p class="nav-link">Merken</p>
+            </a>
+            <a href="vragenlijst.html" class="navbar-item">
+                <p class="nav-link">Vragenlijst</p>
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <article class="mt mb">
+            <header class="article-header">
+                <h2>Over Mij:</h2>
+            </header>
+
+            <div class="flex">
+                <div class="width-66 mr">
+                    <p>Mijn naam is Thom, 32 jaar oud. Ik speel al sinds mijn 18e basgitaar en vind dat ik er best
+                        goed in ben. Mijn voornaamste bas is een Ibanez ATK300, maar daarnaast speel ik ook
+                        regelmatig op een Epiphone Firebird en Rok Axe. Mijn versterker naar keus is een Ashdown.
+                        Momenteel speel ik in een poppunk band genaamd de Schnitzelkids (ja echt waar).
+                    </p>
+                </div>
+
+                <figure class="flex mt">
+                    <img src="./images/image.jpg" alt="Profile" class="image bShadow-33" width="300">
+                </figure>
+            </div>
+        </article>
+
+        <div class="mt2 mb">
+            <header class="article-header">
+                <h2>Contact:</h2>
+            </header>
+
+            <div class="flex width-full mt">
+                <form name="contact" method="POST" data-netlify="true">
+                    <div class="form-item">
+                        <label for="naam" class="label">Naam: </label>
+                        <input type="text" name="naam" class="input">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="email" class="label">Email: </label>
+                        <input type="email" name="email" class="input">
+                    </div>
+
+                    <div class="form-item">
+                        <label for="tekst" class="label">Wat is je vraag? </label>
+                        <textarea name="tekst" class="input textarea"></textarea>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="buttons">
+                            <input type="submit" value="Verzenden" class="button">
+                        </div>
+                        <div>
+                            <input type="reset" value="Reset" class="button">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <figure class="flex mt mb2">
+            <img src="./images/main_bass.jpg" alt="Main" class="image bShadow-33">
+        </figure>
+
+        <div class="width-full mtmb2">
+            <p>
+                Als je helemaal tot hier bent gekomen, bedankt voor het bezoeken en bekijken van mijn
+                kleine oefensite! Dit was een opdracht voor de Full-Stack Opleiding van Winc Academy. De
+                opdracht bedroeg het maken van een website met behulp van HTML en CSS, de website moest
+                gemaakt worden met het mobile-first principe, dat het er goed uit ziet op een mobiele
+                telefoon en van daaruit scalet naar een desktop view. Thanks!
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            Copyright 2020, Thom van der Veldt
+        </div>
+
+        <nav>
+            <a href="over.html" class="about">Over & Contact</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
